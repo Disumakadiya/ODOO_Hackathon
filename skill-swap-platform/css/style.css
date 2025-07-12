@@ -207,4 +207,78 @@ body.blue-theme {
 .login-container button:hover {
   background-color: #0891b2;
 }
+.profile-container {
+  background-color: #1e293b;
+  color: white;
+  width: 400px;
+  padding: 30px;
+  margin: 60px auto;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #38bdf850;
+  text-align: left;
+}
+
+.profile-container input,
+.profile-container select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+  background-color: #334155;
+  color: white;
+}
+
+.profile-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #06b6d4;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.profile-container button:hover {
+  background-color: #0891b2;
+}
+.register-container {
+  background-color: #1e293b;
+  color: white;
+  width: 400px;
+  padding: 30px;
+  margin: 60px auto;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #38bdf850;
+  text-align: left;
+}
+
+.register-container input,
+.register-container select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+  background-color: #334155;
+  color: white;
+}
+
+.register-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #06b6d4;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.register-container button:hover {
+  background-color: #0891b2;
+}
+
+
 
