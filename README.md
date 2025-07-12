@@ -65,15 +65,33 @@ Learn what you love. Teach what you know. Grow together. 💖
 - [Node.js](https://nodejs.org/) (v16+)
 - [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-🤝 How to Contribute
-We welcome contributions from the community! 💪
+### 🧩 Installation
 
-🛠 Steps:
+```bash
+# 1. Clone the repository
+git clone https://github.com/RutviShah2/SkillSwap.git
+cd skill-swap-platform
+
+# 2. Install dependencies
+npm install
+# or
+yarn install
+
+# 3. Start development server
+npm run dev
+# or
+yarn dev
+Open your browser and visit: http://localhost:5173
+
+🤝 How to Contribute
+We welcome contributions from the community! 💪✨
+
+🛠 Steps
 bash
 Copy
 Edit
 # 1. Fork the repository
-# 2. Create a branch
+# 2. Create a feature branch
 git checkout -b feature/YourFeature
 
 # 3. Commit your changes
@@ -84,20 +102,33 @@ git push origin feature/YourFeature
 
 # 5. Open a Pull Request
 🧃 Contribution Guidelines
-Follow the coding style and structure
+Follow the coding style and folder structure
 
-Update the README/docs if needed
+Update README/docs if needed
 
-Test your changes before submitting
+Test your code before submitting
 
 Be kind and constructive in code reviews 🌈
 
+🏆 Meet The Team
+Name	Role	Email
+💻 Disu Makadiya	Backend Architect	disumakadiya@gmail.com
+🖥️ Rutvi Shah	Full-Stack Developer	shahrutvi020@gmail.com
+🎨 Naitri Jasani	UI/UX Designer & Frontend Dev	naitrijasani1006@gmail.com
+📣 Sakshi Kadegiya	Marketing & Content Lead	sakshikadegiya.1@gmail.com
 
-yarn dev
-| Name                   | Role                          | Email                                                           |
-| ---------------------- | ----------------------------- | --------------------------------------------------------------- |
-| 💻 **Disu Makadiya**   | Backend Architect             | [disumakadiya@gmail.com](mailto:disumakadiya@gmail.com)         |
-| 🖥️ **Rutvi Shah**     | Full-Stack Developer          | [shahrutvi020@gmail.com](mailto:shahrutvi020@gmail.com)         |
-| 🎨 **Naitri Jasani**   | UI/UX Designer & Frontend Dev | [naitrijasani1006@gmail.com](mailto:naitrijasani1006@gmail.com) |
-| 📣 **Sakshi Kadegiya** | Marketing & Content Lead      | [sakshikadegiya.1@gmail.com](mailto:sakshikadegiya.1@gmail.com) |
+🙏 Acknowledgments
+Special thanks to:
 
+💙 React & Tailwind CSS teams
+
+⚡ Vite for a blazing-fast dev setup
+
+🌟 Lucide Icons
+
+🧑‍🏫 Our mentors and guides
+
+🌍 The open-source community for endless inspiration
+
+<div align="center">
+Made with ❤️ by the Skill Swap Team
