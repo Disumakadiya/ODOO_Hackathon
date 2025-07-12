@@ -51,6 +51,17 @@ To make learning accessible and interactive by building a global community where
 
 ---
 
+## 🧑‍💻 Meet The Team
+
+| Name              | ID             | Role                           | Email                           |
+|-------------------|----------------|--------------------------------|----------------------------------|
+| 💻 Disu Makadiya  | 22BIT050       | Backend Architect              | disumakadiya@gmail.com          |
+| 🖥️ Rutvi Shah     | 22BIT057       | Full-Stack Developer           | shahrutvi020@gmail.com          |
+| 🎨 Naitri Jasani  | 22BIT036       | UI/UX Designer & Frontend Dev | naitrijasani1006@gmail.com      |
+| 📣 Sakshi Kadegiya| 22BIT056       | Marketing & Content Lead       | sakshikadegiya.1@gmail.com      |
+
+---
+
 <div align="center">
 
 **Made with ❤️ by the Skill Swap Team**
