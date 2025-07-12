@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard | Skill Swap</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- 🌟 Header -->
+  <header class="site-header">
+    <div class="container header-flex">
+      <h1 class="site-title">🔧 Admin Dashboard</h1>
+      <nav class="site-nav">
+        <a href="index.html" class="back-link">← Back to Platform</a>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 📊 Admin Dashboard -->
+  <main class="container">
+    
+    <!-- 📈 Stats Overview -->
+    <section class="admin-stats">
+      <h2>Platform Statistics</h2>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h3>Total Users</h3>
+          <p class="stat-number" id="totalUsers">0</p>
+        </div>
+        <div class="stat-card">
+          <h3>Active Swaps</h3>
+          <p class="stat-number" id="activeSwaps">0</p>
+        </div>
+        <div class="stat-card">
+          <h3>Pending Requests</h3>
+          <p class="stat-number" id="pendingRequests">0</p>
+        </div>
+        <div class="stat-card">
+          <h3>Completed Swaps</h3>
+          <p class="stat-number" id="completedSwaps">0</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 👥 User Management -->
+    <section class="admin-section">
+      <h2>User Management</h2>
+      <div class="admin-controls">
+        <input type="text" id="userSearch" placeholder="Search users..." />
+        <select id="userFilter">
+          <option value="all">All Users</option>
+          <option value="active">Active</option>
+          <option value="banned">Banned</option>
+        </select>
+      </div>
+      <div id="userList" class="admin-list">
+        <!-- User cards will be populated here -->
+      </div>
+    </section>
+
+    <!-- 🔄 Swap Management -->
+    <section class="admin-section">
+      <h2>Swap Requests</h2>
+      <div class="admin-controls">
+        <select id="swapFilter">
+          <option value="all">All Requests</option>
+          <option value="pending">Pending</option>
+          <option value="accepted">Accepted</option>
+          <option value="rejected">Rejected</option>
+        </select>
+      </div>
+      <div id="swapList" class="admin-list">
+        <!-- Swap request cards will be populated here -->
+      </div>
+    </section>
+
+    <!-- 📢 Platform Messages -->
+    <section class="admin-section">
+      <h2>Send Platform Message</h2>
+      <form id="platformMessageForm" class="admin-form">
+        <div class="form-group">
+          <label for="messageTitle">Message Title:</label>
+          <input type="text" id="messageTitle" required placeholder="e.g., New Feature Available!" />
+        </div>
+        <div class="form-group">
+          <label for="messageContent">Message Content:</label>
+          <textarea id="messageContent" rows="4" required placeholder="Enter your platform-wide message..."></textarea>
+        </div>
+        <div class="form-group">
+          <label for="messageType">Message Type:</label>
+          <select id="messageType" required>
+            <option value="info">Information</option>
+            <option value="warning">Warning</option>
+            <option value="maintenance">Maintenance</option>
+            <option value="feature">Feature Update</option>
+          </select>
+        </div>
+        <button type="submit" class="admin-btn">Send Message</button>
+      </form>
+    </section>
+
+    <!-- 📊 Reports -->
+    <section class="admin-section">
+      <h2>Reports & Analytics</h2>
+      <div class="report-controls">
+        <button class="admin-btn" onclick="downloadUserReport()">Download User Report</button>
+        <button class="admin-btn" onclick="downloadSwapReport()">Download Swap Report</button>
+        <button class="admin-btn" onclick="downloadFeedbackReport()">Download Feedback Report</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 🌟 FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Skill Swap Platform</h3>
+          <p>Admin Dashboard - Manage users, swaps, and platform content.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Platform Home</a></li>
+            <li><a href="help.html">Help Center</a></li>
+            <li><a href="help.html#contact-support">Contact Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Admin Tools</h4>
+          <ul>
+            <li><a href="#" onclick="downloadUserReport()">User Reports</a></li>
+            <li><a href="#" onclick="downloadSwapReport()">Swap Reports</a></li>
+            <li><a href="#" onclick="showPlatformStats()">Platform Stats</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Skill Swap Platform. Admin Dashboard.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 📜 SCRIPTS -->
+  <script src="../js/admin.js"></script>
+
+</body>
+</html> 
