@@ -65,24 +65,6 @@ Learn what you love. Teach what you know. Grow together. 💖
 - [Node.js](https://nodejs.org/) (v16+)
 - [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-### 🧩 Installation
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/RutviShah2/SkillSwap.git
-cd skill-swap-platform
-
-# 2. Install dependencies
-npm install
-# or
-yarn install
-
-# 3. Start development server
-npm run dev
-# or
-yarn dev
-Open your browser and visit: http://localhost:5173
-
 🤝 How to Contribute
 We welcome contributions from the community! 💪✨
 
