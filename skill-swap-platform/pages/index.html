@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Skill Swap Platform</title>
-  
-  <!-- CSS Link -->
-  <link rel="stylesheet" href="../css/style.css" />
-
-  <!-- Favicon (optional) -->
-  <link rel="icon" href="../images/swap-icon.png" />
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="icon" href="../images/swap-icon.png"/>
 </head>
 <body>
 
-  <!-- 🌟 NAVBAR (Replace with /components/navbar.html if you're including) -->
+  <!-- 🌐 Platform Header -->
   <header class="site-header">
     <div class="container header-flex">
       <h1 class="site-title">🤝 Skill Swap Platform</h1>
       <nav class="site-nav">
-        <input type="text" id="searchBar" placeholder="Search skills..." />
+        <input type="text" id="searchBar" placeholder="Search by skill (e.g. Photoshop, Cooking)" />
         <select id="availabilityFilter">
           <option value="">All Availability</option>
           <option value="weekends">Weekends</option>
@@ -31,58 +27,69 @@
     </div>
   </header>
 
-  <!-- 🧑‍💻 MAIN CONTENT -->
-  <main class="container">
-    <h2 class="section-title">Explore Public Profiles</h2>
+  <!-- 🔥 Announcement Banner (Admin Feature) -->
+  <section class="announcement">
+    <div class="container">
+      <p id="platformMessage">📣 Welcome to Skill Swap — a community to connect, learn, and grow together!</p>
+    </div>
+  </section>
 
-    <!-- 🔄 USER PROFILE CARDS CONTAINER -->
-    <section id="profileList" class="profile-grid">
-      <!-- Cards will be injected here dynamically using JS -->
-    </section>
+  <!-- 🧠 Summary Filters & Stats -->
+  <section class="container summary-stats">
+    <div class="stat-box">Total Users: <span id="userCount">0</span></div>
+    <div class="stat-box">Active Swaps: <span id="activeSwaps">0</span></div>
+    <div class="stat-box">Feedbacks Logged: <span id="feedbackCount">0</span></div>
+  </section>
+
+  <!-- 💼 Public Profiles Section -->
+  <main class="container">
+    <h2 class="section-title">🔍 Explore Public Skill Profiles</h2>
+    
+    <div id="profileList" class="profile-grid">
+      <!-- Cards will be injected here dynamically -->
+      <!-- Each card should include: name, location, photo, skills offered, skills wanted, availability, rating stars, request button -->
+    </div>
   </main>
 
-  <!-- 🔢 PAGINATION (Optional feature) -->
-  <div class="pagination">
+  <!-- 📜 Legend / Tags -->
+  <section class="container tag-info">
+    <p><strong>⭐ Ratings:</strong> Based on completed swaps | <strong>🕒 Availability:</strong> When they're free | <strong>🗂️ Tags:</strong> Skills Offered/Wanted</p>
+  </section>
+
+  <!-- 👩‍⚖️ Admin Section (Hidden for normal users) -->
+  <section class="container admin-section" id="adminPanel" style="display: none;">
+    <h2>👑 Admin Controls</h2>
+    <div class="admin-controls">
+      <button id="downloadReportBtn">📊 Download User Reports</button>
+      <button id="sendGlobalMessageBtn">📢 Send Platform Message</button>
+    </div>
+    <div id="flaggedDescriptions">
+      <h3>🚩 Flagged Skills for Review</h3>
+      <!-- Flagged items will show here -->
+    </div>
+  </section>
+
+  <!-- 🔁 Recent Activity or Feedbacks -->
+  <section class="container recent-feedbacks">
+    <h2>📝 Latest Feedback & Ratings</h2>
+    <div id="feedbackList" class="feedback-list">
+      <!-- Dynamic feedback cards injected here -->
+    </div>
+  </section>
+
+  <!-- 📎 Pagination -->
+  <footer class="pagination">
     <button disabled>&laquo;</button>
     <button class="active">1</button>
     <button>2</button>
     <button>3</button>
     <button>&raquo;</button>
-  </div>
-
-  <!-- 🌟 FOOTER -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>Skill Swap Platform</h3>
-          <p>Connect, learn, and grow together through skill sharing.</p>
-        </div>
-        <div class="footer-section">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="profile.html">My Profile</a></li>
-            <li><a href="swap-requests.html">Requests</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Support</h4>
-          <ul>
-            <li><a href="help.html">Help Center</a></li>
-            <li><a href="help.html#contact-support">Contact Us</a></li>
-            <li><a href="#" onclick="showPrivacy()">Privacy Policy</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 Skill Swap Platform. All rights reserved.</p>
-      </div>
-    </div>
   </footer>
 
-  <!-- 📜 SCRIPTS -->
+  <!-- 🧠 Scripts -->
   <script src="../js/script.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/swap.js"></script>
 
 </body>
 </html>
