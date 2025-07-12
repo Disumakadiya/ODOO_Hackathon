@@ -9,60 +9,38 @@
 ### 🎯 Mission
 To democratize learning by creating a global community where everyone can be both a teacher and a student, fostering mutual growth and knowledge exchange.
 
-### 💡 Vision
-Building the world's largest skill-sharing network where expertise meets opportunity, and learning becomes a collaborative adventure.
-
 ---
 
 ## ✨ Key Features
 
 ### 🔐 Smart Authentication System
 - ✅ Secure user registration and login
-- ✅ Role-based access control (User/Admin)
-- ✅ Profile management with skill portfolios
 - ✅ Real-time session management
 
 ### 👥 Advanced User Profiles
-- ✅ Comprehensive skill portfolios (Offered/Wanted)
-- ✅ Location-based matching
-- ✅ Availability scheduling
 - ✅ Rating and review system
 - ✅ Public/Private profile options
 
 ### 🔍 Intelligent Skill Discovery
-- ✅ Advanced skill browsing and filtering
-- ✅ Location-based user discovery
 - ✅ Skill compatibility matching
 - ✅ Real-time search functionality
 - ✅ Personalized recommendations
 
 ### 🤝 Seamless Swap Management
 - ✅ Create and manage skill swap requests
-- ✅ Real-time status tracking (Pending/Accepted/Completed)
-- ✅ In-app messaging system
-- ✅ Swap history and analytics
 - ✅ Request acceptance/rejection workflow
 
 ### ⭐ Comprehensive Feedback System
 - ✅ Multi-directional rating system
-- ✅ Detailed feedback and reviews
-- ✅ Performance analytics
-- ✅ Quality assurance mechanisms
 - ✅ Trust-building features
 
 ### 🛡️ Admin Dashboard & Analytics
 - ✅ Comprehensive user management
-- ✅ Platform analytics and insights
-- ✅ Skill trend analysis
 - ✅ User activity monitoring
-- ✅ Report generation and export
 - ✅ System maintenance tools
 
 ### 📱 Responsive Design
 - ✅ Mobile-first approach
-- ✅ Cross-platform compatibility
-- ✅ Intuitive user interface
-- ✅ Accessibility features
 - ✅ Modern UI/UX design
 
 ---
@@ -74,7 +52,6 @@ Building the world's largest skill-sharing network where expertise meets opportu
 |------------|---------|---------|
 | **React** | 18.3.1 | Modern UI library with hooks |
 | **TypeScript** | 5.5.3 | Type-safe development |
-| **Vite** | 5.4.2 | Lightning-fast build tool |
 
 ### Styling & UI
 | Technology | Version | Purpose |
@@ -94,7 +71,6 @@ Building the world's largest skill-sharing network where expertise meets opportu
 - **Component-based architecture**
 - **State management with React hooks**
 - **Type-safe interfaces**
-- **Responsive design patterns**
 
 ---
 
@@ -241,7 +217,6 @@ We would like to express our gratitude to:
 - **React Team** for the amazing framework
 - **Vite Team** for the lightning-fast build tool
 - **Tailwind CSS** for the utility-first CSS framework
-- **Lucide** for the beautiful icon library
 - **Our mentors and advisors** for their guidance
 - **The open-source community** for inspiration and support
 
