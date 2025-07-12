@@ -6,9 +6,24 @@ window.onload = loadUsers;
 
 async function loadUsers() {
   const res = await fetch('../data/users.json');
-  allUsers = await res.json();
+  const jsonUsers = await res.json();
+
+  const localUsers = JSON.parse(localStorage.getItem("registeredUsers")) || [];
+  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+  // 👇 Make sure current user is included in the display list
+  const filteredLocal = localUsers.filter(u => u.email !== currentUser?.email);
+  const allUsers = [...jsonUsers, ...filteredLocal];
+
+  // ✅ If currentUser is not in json or registered list, add manually
+  if (currentUser && !allUsers.some(u => u.email === currentUser.email)) {
+    allUsers.push(currentUser);
+  }
+
+  window.allUsers = allUsers; // for pagination
   displayUsersPaginated(currentPage);
 }
+
 
 function displayUsersPaginated(page) {
   const start = (page - 1) * usersPerPage;
