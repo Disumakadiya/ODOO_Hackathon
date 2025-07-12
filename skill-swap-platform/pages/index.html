@@ -1,88 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Skill Swap Platform</title>
-  
-  <!-- CSS Link -->
-  <link rel="stylesheet" href="../css/style.css" />
-
-  <!-- Favicon (optional) -->
-  <link rel="icon" href="../images/swap-icon.png" />
+  <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body class="blue-theme">
 
-  <!-- 🌟 NAVBAR (Replace with /components/navbar.html if you're including) -->
-  <header class="site-header">
-    <div class="container header-flex">
-      <h1 class="site-title">🤝 Skill Swap Platform</h1>
-      <nav class="site-nav">
-        <input type="text" id="searchBar" placeholder="Search skills..." />
-        <select id="availabilityFilter">
-          <option value="">All Availability</option>
-          <option value="weekends">Weekends</option>
-          <option value="evenings">Evenings</option>
-          <option value="mornings">Mornings</option>
-        </select>
-        <a href="login.html" class="login-btn">Login</a>
-      </nav>
-    </div>
+  <!-- 🔼 NAVBAR -->
+  <header class="navbar">
+    <h1>Skill Swap Platform</h1>
+    <nav>
+  <a href="swap-requests.html">Swap request</a>
+  <a href="login.html" class="login-btn">Login</a>
+  <img src="../images/default-profile.png" alt="User" class="profile-icon">
+</nav>
+
   </header>
 
-  <!-- 🧑‍💻 MAIN CONTENT -->
-  <main class="container">
-    <h2 class="section-title">Explore Public Profiles</h2>
+  <!-- 🔍 SEARCH BAR -->
+  <section class="search-bar">
+    <select id="availabilityFilter">
+      <option value="">Availability</option>
+      <option value="weekends">Weekends</option>
+      <option value="evenings">Evenings</option>
+    </select>
+    <input type="text" id="searchSkill" placeholder="Search skill...">
+    <button onclick="searchUsers()">Search</button>
+  </section>
 
-    <!-- 🔄 USER PROFILE CARDS CONTAINER -->
-    <section id="profileList" class="profile-grid">
-      <!-- Cards will be injected here dynamically using JS -->
-    </section>
-  </main>
+  <!-- 📦 USER CARDS -->
+  <main id="userList" class="user-list"></main>
 
-  <!-- 🔢 PAGINATION (Optional feature) -->
-  <div class="pagination">
-    <button disabled>&laquo;</button>
-    <button class="active">1</button>
-    <button>2</button>
-    <button>3</button>
-    <button>&raquo;</button>
-  </div>
+  <!-- 🔢 PAGINATION -->
+  <div id="pagination" class="pagination"></div>
 
-  <!-- 🌟 FOOTER -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>Skill Swap Platform</h3>
-          <p>Connect, learn, and grow together through skill sharing.</p>
-        </div>
-        <div class="footer-section">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="profile.html">My Profile</a></li>
-            <li><a href="swap-requests.html">Requests</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Support</h4>
-          <ul>
-            <li><a href="help.html">Help Center</a></li>
-            <li><a href="help.html#contact-support">Contact Us</a></li>
-            <li><a href="#" onclick="showPrivacy()">Privacy Policy</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 Skill Swap Platform. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- 📜 SCRIPTS -->
+  <!-- 📜 JS -->
   <script src="../js/script.js"></script>
-
 </body>
 </html>

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "1",
+    "name": "Marc Demo",
+    "email": "marc@demo.com",
+    "password": "marc123",
+    "skillsOffered": ["JavaScript", "Python"],
+    "skillsWanted": ["Photoshop", "Graphic Designer"],
+    "availability": "weekends",
+    "rating": 3.8,
+    "photo": "../images/default-profile.png"
+  },
+  {
+    "id": "2",
+    "name": "Michell",
+    "email": "michell@demo.com",
+    "password": "mich456",
+    "skillsOffered": ["JavaScript", "Python"],
+    "skillsWanted": ["Photoshop", "Graphic Designer"],
+    "availability": "evenings",
+    "rating": 2.5,
+    "photo": "../images/default-profile.png"
+  },
+  {
+    "id": "3",
+    "name": "Joe Wills",
+    "email": "joe@demo.com",
+    "password": "joe789",
+    "skillsOffered": ["JavaScript", "Python"],
+    "skillsWanted": ["Photoshop", "Graphic Designer"],
+    "availability": "evenings",
+    "rating": 4.0,
+    "photo": "../images/default-profile.png"
+  },
+  {
+    "id": "4",
+    "name": "Aditi Rana",
+    "email": "aditi@demo.com",
+    "password": "aditi456",
+    "skillsOffered": ["HTML", "CSS"],
+    "skillsWanted": ["UI Design", "React"],
+    "availability": "weekends",
+    "rating": 4.2,
+    "photo": "../images/default-profile.png"
+  },
+  {
+    "id": "5",
+    "name": "Rahul Mehta",
+    "email": "rahul@demo.com",
+    "password": "rahul123",
+    "skillsOffered": ["Graphic Design"],
+    "skillsWanted": ["Python", "Firebase"],
+    "availability": "evenings",
+    "rating": 3.5,
+    "photo": "../images/default-profile.png"
+  },
+  {
+    "id": "6",
+    "name": "Priya Patel",
+    "email": "priya@demo.com",
+    "password": "priya321",
+    "skillsOffered": ["Excel", "Data Entry"],
+    "skillsWanted": ["Photoshop"],
+    "availability": "weekends",
+    "rating": 4.8,
+    "photo": "../images/default-profile.png"
+  }
+]
