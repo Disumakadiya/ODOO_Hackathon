@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Profile | Skill Swap</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- 🌟 Header -->
+  <header class="site-header">
+    <div class="container header-flex">
+      <h1 class="site-title">My Profile</h1>
+      <a href="index.html" class="back-link">← Home</a>
+    </div>
+  </header>
+
+  <!-- 👤 Profile Form -->
+  <main class="container">
+    <form id="profileForm" class="profile-form">
+      
+      <!-- Profile Picture -->
+      <div class="form-group">
+        <label for="profilePic">Profile Photo:</label><br />
+        <input type="file" id="profilePic" accept="image/*" />
+        <img id="previewImage" src="../images/default-profile.png" alt="Preview" class="profile-preview"/>
+      </div>
+
+      <!-- Name + Location -->
+      <div class="form-group">
+        <label for="userName">Name:</label>
+        <input type="text" id="userName" required placeholder="Your name" />
+      </div>
+
+      <div class="form-group">
+        <label for="userLocation">Location:</label>
+        <input type="text" id="userLocation" placeholder="City, Country (optional)" />
+      </div>
+
+      <!-- Skills Offered -->
+      <div class="form-group">
+        <label for="skillsOffered">Skills You Offer:</label>
+        <input type="text" id="skillsOffered" placeholder="e.g. Java, Photoshop, Cooking" />
+      </div>
+
+      <!-- Skills Wanted -->
+      <div class="form-group">
+        <label for="skillsWanted">Skills You Want to Learn:</label>
+        <input type="text" id="skillsWanted" placeholder="e.g. Excel, French, Painting" />
+      </div>
+
+      <!-- Availability -->
+      <div class="form-group">
+        <label for="availability">Availability:</label>
+        <select id="availability">
+          <option value="evenings">Evenings</option>
+          <option value="weekends">Weekends</option>
+          <option value="mornings">Mornings</option>
+        </select>
+      </div>
+
+      <!-- Public Profile Toggle -->
+      <div class="form-group">
+        <label>
+          <input type="checkbox" id="isPublic" checked />
+          Make my profile public
+        </label>
+      </div>
+
+      <!-- Save Button -->
+      <button type="submit" class="save-btn">Save Profile</button>
+    </form>
+  </main>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
