@@ -1,3 +1,4 @@
+console.log("✅ script.js is loaded");
 let allUsers = [];
 let currentPage = 1;
 const usersPerPage = 3;
@@ -39,10 +40,14 @@ function displayUsers(users) {
   users.forEach(user => {
     const card = document.createElement('div');
     card.className = 'user-card';
+
     card.innerHTML = `
-      <img src="${user.photo}" alt="${user.name}">
-      <div>
-        <h3>${user.name}</h3>
+      <div class="left-section">
+        <img src="${user.photo}" alt="${user.name}">
+        <div class="user-name">${user.name}</div>
+      </div>
+
+      <div class="right-section">
         <div class="skills">
           <div class="skill-label">Skill Offered =></div>
           ${user.skillsOffered.map(skill => `<span>${skill}</span>`).join('')}
@@ -51,11 +56,13 @@ function displayUsers(users) {
         </div>
         <div class="rating">⭐ ${user.rating}/5</div>
       </div>
+
       <button class="request-btn">Request</button>
     `;
-    container.appendChild(card);
+    // container.appendChild(card);
   });
 }
+
 
 function renderPagination(totalUsers, current) {
   const totalPages = Math.ceil(totalUsers / usersPerPage);
