@@ -65,21 +65,34 @@ Learn what you love. Teach what you know. Grow together. 💖
 - [Node.js](https://nodejs.org/) (v16+)
 - [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-### 🧩 Installation
+🤝 How to Contribute
+We welcome contributions from the community! 💪
 
-```bash
-# Clone the repository
-git clone https://github.com/RutviShah2/SkillSwap.git
-cd skill-swap-platform
+🛠 Steps:
+bash
+Copy
+Edit
+# 1. Fork the repository
+# 2. Create a branch
+git checkout -b feature/YourFeature
 
-# Install dependencies
-npm install
-# or
-yarn install
+# 3. Commit your changes
+git commit -m "✨ Added new feature"
 
-# Start development server
-npm run dev
-# or
+# 4. Push to your branch
+git push origin feature/YourFeature
+
+# 5. Open a Pull Request
+🧃 Contribution Guidelines
+Follow the coding style and structure
+
+Update the README/docs if needed
+
+Test your changes before submitting
+
+Be kind and constructive in code reviews 🌈
+
+
 yarn dev
 | Name                   | Role                          | Email                                                           |
 | ---------------------- | ----------------------------- | --------------------------------------------------------------- |
