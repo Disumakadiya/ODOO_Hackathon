@@ -59,7 +59,7 @@ function displayUsers(users) {
 
       <button class="request-btn">Request</button>
     `;
-    container.appendChild(card);
+    // container.appendChild(card);
   });
 }
 
