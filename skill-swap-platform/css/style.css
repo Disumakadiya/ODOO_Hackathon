@@ -1,3 +1,4 @@
+
 /* 🌌 BLUE THEME */
 body.blue-theme {
   background-color: #0f172a;
@@ -85,16 +86,44 @@ body.blue-theme {
 }
 
 .user-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
   background-color: #1e293b;
   border: 1px solid #334155;
   border-radius: 15px;
-  padding: 20px;
   width: 80%;
   margin-bottom: 20px;
+  box-shadow: 0 0 8px #38bdf850;
+}
+
+.left-section {
   display: flex;
   align-items: center;
-  gap: 20px;
-  box-shadow: 0 0 8px #38bdf850;
+  gap: 15px;
+  width: 25%;
+}
+
+.left-section img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.user-name {
+  font-weight: bold;
+  font-size: 18px;
+  color: #f8fafc;
+}
+
+.right-section {
+  width: 60%;
+}
+
+.right-section p {
+  margin: 5px 0;
+  color: #f1f5f9;
 }
 
 .user-card img {
@@ -279,6 +308,3 @@ body.blue-theme {
 .register-container button:hover {
   background-color: #0891b2;
 }
-
-
-
