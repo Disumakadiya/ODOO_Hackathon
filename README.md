@@ -11,40 +11,32 @@
 ## 🎯 Mission
 
 To make learning accessible and interactive by building a global community where everyone can be both a teacher and a student.  
-Learn what you love. Teach what you know. Grow together. 💖
+**Learn what you love. Teach what you know. Grow together. 💖**
 
 ---
 
 ## ✨ Key Features
 
-- 🔐 **Secure Authentication**
-  - User registration & login
-  - Real-time session management
+- 🔐 **Secure Authentication**  
+  User registration & login | Real-time session management
 
-- 👤 **User Profiles**
-  - Public/private profile options
-  - Skill ratings and reviews
+- 👤 **User Profiles**  
+  Public/private profiles | Skill ratings & reviews
 
-- 🔍 **Skill Discovery**
-  - Intelligent matching system
-  - Live search functionality
-  - Personalized suggestions
+- 🔍 **Skill Discovery**  
+  Smart matching | Live search | Personalized suggestions
 
-- 🤝 **Skill Swap System**
-  - Send & receive swap requests
-  - Accept or decline swaps
+- 🤝 **Skill Swap System**  
+  Request, accept or decline skill swaps
 
-- ⭐ **Feedback Mechanism**
-  - Rate & review swap partners
-  - Build trust through transparency
+- ⭐ **Feedback System**  
+  Ratings & reviews to build trust
 
-- 🛡️ **Admin Dashboard**
-  - Manage users and monitor activity
-  - Maintain system health
+- 🛡️ **Admin Dashboard**  
+  User & activity management
 
-- 📱 **Responsive UI/UX**
-  - Fully mobile-ready
-  - Tailwind-powered modern design
+- 📱 **Responsive UI/UX**  
+  Fully mobile-ready | Tailwind-powered modern look
 
 ---
 
@@ -53,64 +45,14 @@ Learn what you love. Teach what you know. Grow together. 💖
 | Category        | Tools/Frameworks                         |
 |----------------|-------------------------------------------|
 | **Frontend**    | React 18.3.1, TypeScript                 |
-| **Styling**     | Tailwind CSS 3.4.1, Lucide React Icons  |
+| **Styling**     | Tailwind CSS 3.4.1, Lucide Icons         |
 | **Build Tool**  | Vite                                     |
 | **Utilities**   | PostCSS, Autoprefixer, ESLint            |
 
 ---
 
-## 🚀 Getting Started
-
-### ✅ Prerequisites
-- [Node.js](https://nodejs.org/) (v16+)
-- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
-
-🤝 How to Contribute
-We welcome contributions from the community! 💪✨
-
-🛠 Steps
-bash
-Copy
-Edit
-# 1. Fork the repository
-# 2. Create a feature branch
-git checkout -b feature/YourFeature
-
-# 3. Commit your changes
-git commit -m "✨ Added new feature"
-
-# 4. Push to your branch
-git push origin feature/YourFeature
-
-# 5. Open a Pull Request
-🧃 Contribution Guidelines
-Follow the coding style and folder structure
-
-Update README/docs if needed
-
-Test your code before submitting
-
-Be kind and constructive in code reviews 🌈
-
-🏆 Meet The Team
-Name	Role	Email
-💻 Disu Makadiya	Backend Architect	disumakadiya@gmail.com
-🖥️ Rutvi Shah	Full-Stack Developer	shahrutvi020@gmail.com
-🎨 Naitri Jasani	UI/UX Designer & Frontend Dev	naitrijasani1006@gmail.com
-📣 Sakshi Kadegiya	Marketing & Content Lead	sakshikadegiya.1@gmail.com
-
-🙏 Acknowledgments
-Special thanks to:
-
-💙 React & Tailwind CSS teams
-
-⚡ Vite for a blazing-fast dev setup
-
-🌟 Lucide Icons
-
-🧑‍🏫 Our mentors and guides
-
-🌍 The open-source community for endless inspiration
-
 <div align="center">
-Made with ❤️ by the Skill Swap Team
+
+**Made with ❤️ by the Skill Swap Team**
+
+</div>
