@@ -4,86 +4,461 @@
   <meta charset="UTF-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Skill Swap Platform</title>
+  <title>Skill Swap Platform - Connect, Learn & Grow Together</title>y
   <link rel="stylesheet" href="../css/style.css"/>
   <link rel="icon" href="../images/swap-icon.png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- 🌐 Platform Header -->
-  <header class="site-header">
-    <div class="container header-flex">
-      <h1 class="site-title">🤝 Skill Swap Platform</h1>
-      <nav class="site-nav">
-        <input type="text" id="searchBar" placeholder="Search by skill (e.g. Photoshop, Cooking)" />
-        <select id="availabilityFilter">
-          <option value="">All Availability</option>
-          <option value="weekends">Weekends</option>
-          <option value="evenings">Evenings</option>
-          <option value="mornings">Mornings</option>
-        </select>
-        <a href="login.html" class="login-btn">Login</a>
+  <!-- 🌟 Hero Header -->
+  <header class="hero-header">
+    <div class="hero-background">
+      <div class="hero-pattern"></div>
+    </div>
+    <div class="container">
+      <nav class="main-nav">
+        <div class="nav-brand">
+          <h1 class="brand-title">🤝 Skill Swap</h1>
+          <p class="brand-subtitle">Connect • Learn • Grow</p>
+        </div>
+        <div class="nav-actions">
+          <a href="help.html" class="nav-link">Help</a>
+          <a href="login.html" class="nav-link">Login</a>
+          <a href="profile.html" class="cta-button">Get Started</a>
+        </div>
       </nav>
+      
+      <div class="hero-content">
+        <h2 class="hero-title">Master New Skills Through Community Exchange</h2>
+        <p class="hero-description">
+          Join thousands of learners who are swapping skills, building connections, and accelerating their growth. 
+          Whether you want to learn coding, cooking, or creative arts, find your perfect skill exchange partner.
+        </p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">2,847</span>
+            <span class="stat-label">Active Users</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">1,234</span>
+            <span class="stat-label">Successful Swaps</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">4.8</span>
+            <span class="stat-label">Average Rating</span>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
-  <!-- 🔥 Announcement Banner (Admin Feature) -->
-  <section class="announcement">
+  <!-- 🔍 Search & Filter Section -->
+  <section class="search-section">
     <div class="container">
-      <p id="platformMessage">📣 Welcome to Skill Swap — a community to connect, learn, and grow together!</p>
+      <div class="search-container">
+        <div class="search-box">
+          <div class="search-input-group">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="searchBar" placeholder="Search for skills (e.g., Python, Photography, French)" />
+          </div>
+          <div class="filter-group">
+            <select id="availabilityFilter" class="filter-select">
+              <option value="">Any Time</option>
+              <option value="weekends">Weekends</option>
+              <option value="evenings">Evenings</option>
+              <option value="mornings">Mornings</option>
+              <option value="weekdays">Weekdays</option>
+            </select>
+            <select id="skillCategoryFilter" class="filter-select">
+              <option value="">All Categories</option>
+              <option value="technology">Technology</option>
+              <option value="creative">Creative Arts</option>
+              <option value="language">Languages</option>
+              <option value="business">Business</option>
+              <option value="lifestyle">Lifestyle</option>
+            </select>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- 🧠 Summary Filters & Stats -->
-  <section class="container summary-stats">
-    <div class="stat-box">Total Users: <span id="userCount">0</span></div>
-    <div class="stat-box">Active Swaps: <span id="activeSwaps">0</span></div>
-    <div class="stat-box">Feedbacks Logged: <span id="feedbackCount">0</span></div>
-  </section>
-
-  <!-- 💼 Public Profiles Section -->
-  <main class="container">
-    <h2 class="section-title">🔍 Explore Public Skill Profiles</h2>
-    
-    <div id="profileList" class="profile-grid">
-      <!-- Cards will be injected here dynamically -->
-      <!-- Each card should include: name, location, photo, skills offered, skills wanted, availability, rating stars, request button -->
-    </div>
-  </main>
-
-  <!-- 📜 Legend / Tags -->
-  <section class="container tag-info">
-    <p><strong>⭐ Ratings:</strong> Based on completed swaps | <strong>🕒 Availability:</strong> When they're free | <strong>🗂️ Tags:</strong> Skills Offered/Wanted</p>
-  </section>
-
-  <!-- 👩‍⚖️ Admin Section (Hidden for normal users) -->
-  <section class="container admin-section" id="adminPanel" style="display: none;">
-    <h2>👑 Admin Controls</h2>
-    <div class="admin-controls">
-      <button id="downloadReportBtn">📊 Download User Reports</button>
-      <button id="sendGlobalMessageBtn">📢 Send Platform Message</button>
-    </div>
-    <div id="flaggedDescriptions">
-      <h3>🚩 Flagged Skills for Review</h3>
-      <!-- Flagged items will show here -->
+  <!-- 📊 Platform Overview -->
+  <section class="overview-section">
+    <div class="container">
+      <div class="overview-grid">
+        <div class="overview-card">
+          <div class="overview-icon">👥</div>
+          <h3>Community</h3>
+          <p>Join a diverse community of learners and teachers from around the world</p>
+        </div>
+        <div class="overview-card">
+          <div class="overview-icon">⚡</div>
+          <h3>Fast Learning</h3>
+          <p>Accelerate your learning through direct skill exchange with experts</p>
+        </div>
+        <div class="overview-card">
+          <div class="overview-icon">🤝</div>
+          <h3>Mutual Growth</h3>
+          <p>Teach what you know, learn what you need - everyone benefits</p>
+        </div>
+        <div class="overview-card">
+          <div class="overview-icon">🛡️</div>
+          <h3>Safe & Secure</h3>
+          <p>Verified profiles, ratings, and safe meeting guidelines</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- 🔁 Recent Activity or Feedbacks -->
-  <section class="container recent-feedbacks">
-    <h2>📝 Latest Feedback & Ratings</h2>
-    <div id="feedbackList" class="feedback-list">
-      <!-- Dynamic feedback cards injected here -->
+  <!-- 🎯 Featured Profiles -->
+  <section class="featured-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>🌟 Featured Skill Partners</h2>y
+        <p>Discover amazing people ready to share their expertise</p>
+      </div>
+      
+      <div id="profileList" class="profile-grid">
+        <!-- Sample Profile Cards -->
+        <div class="profile-card featured">
+          <div class="profile-header">
+            <img src="../images/default-profile.png" alt="Sarah Chen" class="profile-avatar"/>
+            <div class="profile-badge">Featured</div>
+          </div>
+          <div class="profile-info">
+            <h3 class="profile-name">Sarah Chen</h3>
+            <p class="profile-location">📍 San Francisco, CA</p>
+            <div class="profile-rating">
+              <span class="stars">⭐⭐⭐⭐⭐</span>
+              <span class="rating-text">(4.9/5)</span>
+            </div>
+          </div>
+          <div class="profile-skills">
+            <div class="skills-section">
+              <h4>🎨 Offers</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">UI/UX Design</span>
+                <span class="skill-tag">Figma</span>
+                <span class="skill-tag">Prototyping</span>
+              </div>
+            </div>
+            <div class="skills-section">
+              <h4>📚 Wants to Learn</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Data Science</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile-availability">
+            <span class="availability-badge">🕒 Evenings & Weekends</span>
+          </div>
+          <a href="view-profile.html" class="profile-action-btn">View Profile</a>
+        </div>
+
+        <div class="profile-card">
+          <div class="profile-header">
+            <img src="../images/default-profile.png" alt="Marcus Rodriguez" class="profile-avatar"/>
+          </div>
+          <div class="profile-info">
+            <h3 class="profile-name">Marcus Rodriguez</h3>
+            <p class="profile-location">📍 Austin, TX</p>
+            <div class="profile-rating">
+              <span class="stars">⭐⭐⭐⭐⭐</span>
+              <span class="rating-text">(4.7/5)</span>
+            </div>
+          </div>
+          <div class="profile-skills">
+            <div class="skills-section">
+              <h4>💻 Offers</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Node.js</span>
+              </div>
+            </div>
+            <div class="skills-section">
+              <h4>📚 Wants to Learn</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Spanish</span>
+                <span class="skill-tag">Guitar</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile-availability">
+            <span class="availability-badge">🕒 Weekends</span>
+          </div>
+          <a href="view-profile.html" class="profile-action-btn">View Profile</a>
+        </div>
+
+        <div class="profile-card">
+          <div class="profile-header">
+            <img src="../images/default-profile.png" alt="Emma Thompson" class="profile-avatar"/>
+          </div>
+          <div class="profile-info">
+            <h3 class="profile-name">Emma Thompson</h3>
+            <p class="profile-location">📍 London, UK</p>
+            <div class="profile-rating">
+              <span class="stars">⭐⭐⭐⭐⭐</span>
+              <span class="rating-text">(4.8/5)</span>
+            </div>
+          </div>
+          <div class="profile-skills">
+            <div class="skills-section">
+              <h4>🍳 Offers</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">French Cuisine</span>
+                <span class="skill-tag">Baking</span>
+                <span class="skill-tag">Food Photography</span>
+              </div>
+            </div>
+            <div class="skills-section">
+              <h4>📚 Wants to Learn</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Digital Marketing</span>
+                <span class="skill-tag">SEO</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile-availability">
+            <span class="availability-badge">🕒 Evenings</span>
+          </div>
+          <a href="view-profile.html" class="profile-action-btn">View Profile</a>
+        </div>
+
+        <div class="profile-card">
+          <div class="profile-header">
+            <img src="../images/default-profile.png" alt="David Kim" class="profile-avatar"/>
+          </div>
+          <div class="profile-info">
+            <h3 class="profile-name">David Kim</h3>
+            <p class="profile-location">📍 Seoul, South Korea</p>
+            <div class="profile-rating">
+              <span class="stars">⭐⭐⭐⭐⭐</span>
+              <span class="rating-text">(4.6/5)</span>
+            </div>
+          </div>
+          <div class="profile-skills">
+            <div class="skills-section">
+              <h4>🎵 Offers</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Piano</span>
+                <span class="skill-tag">Music Theory</span>
+                <span class="skill-tag">Korean Language</span>
+              </div>
+            </div>
+            <div class="skills-section">
+              <h4>📚 Wants to Learn</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">AI</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile-availability">
+            <span class="availability-badge">🕒 Mornings</span>
+          </div>
+          <a href="view-profile.html" class="profile-action-btn">View Profile</a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- 📎 Pagination -->
-  <footer class="pagination">
-    <button disabled>&laquo;</button>
-    <button class="active">1</button>
-    <button>2</button>
-    <button>3</button>
-    <button>&raquo;</button>
+  <!-- 📈 Success Stories -->
+  <section class="success-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>🎉 Success Stories</h2>
+        <p>Real stories from our community members</p>
+      </div>
+      <div class="success-grid">
+        <div class="success-card">
+          <div class="success-quote">"I learned Python in just 3 months through skill swaps! My partner was amazing."</div>
+          <div class="success-author">
+            <img src="../images/default-profile.png" alt="Alex Johnson" class="author-avatar"/>
+            <div class="author-info">
+              <h4>Alex Johnson</h4>
+              <p>Software Developer</p>
+            </div>
+          </div>
+        </div>
+        <div class="success-card">
+          <div class="success-quote">"Teaching French while learning photography was the perfect exchange for me."</div>
+          <div class="success-author">
+            <img src="../images/default-profile.png" alt="Marie Dubois" class="author-avatar"/>
+            <div class="author-info">
+              <h4>Marie Dubois</h4>
+              <p>Photographer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🚀 How It Works -->
+  <section class="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <h2>🚀 How Skill Swap Works</h2>
+        <p>Get started in just 4 simple steps</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h3>Create Your Profile</h3>
+          <p>List the skills you can teach and what you want to learn</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h3>Find Your Match</h3>
+          <p>Browse profiles and find someone with complementary skills</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h3>Send a Request</h3>
+          <p>Propose a skill swap and arrange your first session</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">4</div>
+          <h3>Learn & Grow</h3>
+          <p>Meet up, exchange skills, and rate your experience</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📊 Platform Stats -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon">👥</div>
+          <div class="stat-content">
+            <h3>2,847</h3>
+            <p>Active Members</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🤝</div>
+          <div class="stat-content">
+            <h3>1,234</h3>
+            <p>Successful Swaps</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">⭐</div>
+          <div class="stat-content">
+            <h3>4.8</h3>
+            <p>Average Rating</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🌍</div>
+          <div class="stat-content">
+            <h3>45</h3>
+            <p>Countries</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📝 Recent Activity -->
+  <section class="activity-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>📝 Recent Community Activity</h2>
+        <p>Latest feedback and successful swaps</p>
+      </div>
+      <div id="feedbackList" class="activity-grid">
+        <div class="activity-card">
+          <div class="activity-header">
+            <img src="../images/default-profile.png" alt="User" class="activity-avatar"/>
+            <div class="activity-info">
+              <h4>New Swap Completed</h4>
+              <p>Sarah taught UI/UX Design to Alex</p>
+            </div>
+            <span class="activity-time">2 hours ago</span>
+          </div>
+          <div class="activity-rating">
+            <span class="stars">⭐⭐⭐⭐⭐</span>
+            <span class="rating-text">"Amazing teacher! Learned so much about Figma."</span>
+          </div>
+        </div>
+        <div class="activity-card">
+          <div class="activity-header">
+            <img src="../images/default-profile.png" alt="User" class="activity-avatar"/>
+            <div class="activity-info">
+              <h4>New Profile Joined</h4>
+              <p>Welcome Emma Thompson to Skill Swap!</p>
+            </div>
+            <span class="activity-time">5 hours ago</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📄 Pagination -->
+  <section class="pagination-section">
+    <div class="container">
+      <div class="pagination">
+        <button disabled>&laquo; Previous</button>
+        <button class="active">1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>Next &raquo;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🌟 Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>🤝 Skill Swap Platform</h3>
+          <p>Connecting learners worldwide through skill exchange. Build meaningful relationships while accelerating your personal and professional growth.</p>
+          <div class="social-links">
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">Instagram</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">My Profile</a></li>
+            <li><a href="swap-requests.html">Requests</a></li>
+            <li><a href="help.html">Help Center</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="help.html">Help & FAQ</a></li>
+            <li><a href="help.html#contact-support">Contact Us</a></li>
+            <li><a href="#" onclick="showPrivacy()">Privacy Policy</a></li>
+            <li><a href="#" onclick="showTerms()">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>For Admins</h4>
+          <ul>
+            <li><a href="admin-dashboard.html">Admin Dashboard</a></li>
+            <li><a href="#" onclick="downloadReports()">Download Reports</a></li>
+            <li><a href="#" onclick="sendMessage()">Send Platform Message</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Skill Swap Platform. All rights reserved. | Built with ❤️ for the global learning community</p>
+      </div>
+    </div>
   </footer>
 
   <!-- 🧠 Scripts -->
