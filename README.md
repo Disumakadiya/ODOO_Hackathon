@@ -81,3 +81,10 @@ yarn install
 npm run dev
 # or
 yarn dev
+| Name                   | Role                          | Email                                                           |
+| ---------------------- | ----------------------------- | --------------------------------------------------------------- |
+| 💻 **Disu Makadiya**   | Backend Architect             | [disumakadiya@gmail.com](mailto:disumakadiya@gmail.com)         |
+| 🖥️ **Rutvi Shah**     | Full-Stack Developer          | [shahrutvi020@gmail.com](mailto:shahrutvi020@gmail.com)         |
+| 🎨 **Naitri Jasani**   | UI/UX Designer & Frontend Dev | [naitrijasani1006@gmail.com](mailto:naitrijasani1006@gmail.com) |
+| 📣 **Sakshi Kadegiya** | Marketing & Content Lead      | [sakshikadegiya.1@gmail.com](mailto:sakshikadegiya.1@gmail.com) |
+
