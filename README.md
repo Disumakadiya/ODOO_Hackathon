@@ -8,7 +8,6 @@
 🚀 [**Live Demo on Vercel**](https://odoohackathon-skillswap.vercel.app/)
 
 </div>
----
 
 ## 🎯 Mission
 
