@@ -1,11 +1,13 @@
-# 🔄 Skill Swap Platform
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=800&color=00FFFF&center=true&vCenter=true&width=600&lines=💡+Skill+Swap+Platform+🤝" alt="Typing animation" />
+</p>
 
 <div align="center">
-<img src="https://media.giphy.com/media/hp3v9a2uWz9mB4VRpy/giphy.gif" width="220" alt="Skill Swap Animation" />
 
-### 🌟 A collaborative platform to learn, teach & grow together 💡
+🌐 *A collaborative platform to learn, teach & grow through peer-to-peer skills exchange* 🌱  
+🚀 [**Live Demo on Vercel**](https://odoohackathon-skillswap.vercel.app/)
+
 </div>
-
 ---
 
 ## 🎯 Mission
