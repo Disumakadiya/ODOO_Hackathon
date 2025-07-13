@@ -30,12 +30,6 @@ To make learning more human, fun, and interactive by enabling peer-to-peer skill
 
 ---
 
-## 🚀 Live Demo
-
-👉 [Click here to try the live site on Vercel](https://odoohackathon-skillswap.vercel.app/)
-
----
-
 ## 🛠️ Tech Stack
 
 | Category      | Tools / Frameworks |
